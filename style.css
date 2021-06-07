@@ -29,6 +29,7 @@
     grid-gap: 2em 2em;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 1em;
+    grid-auto-flow: row dense;
 }
 
 .latest{
@@ -77,6 +78,10 @@
     color: #888
 }
 
+.a-text {
+    display: none;
+}
+
 img{
     object-fit: contain;
     width: 100%;
@@ -98,4 +103,18 @@ img{
 }
 .a-l-title {
     text-align: justify;
+    font-weight: 500;
+}
+
+
+
+.large{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.large .a-text{
+    display: block;
+    text-align: justify;
+    color: #888;
 }
